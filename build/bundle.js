@@ -73,6 +73,8 @@
 "use strict";
 
 
+__webpack_require__(3);
+
 var image = document.createElement('img');
 
 image.src = 'http://lorempixel.com/1024/960';
@@ -113,6 +115,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var total = (0, _sum2.default)(1, 3);
 
 console.log(total);
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
