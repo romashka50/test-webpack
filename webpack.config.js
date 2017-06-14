@@ -15,9 +15,9 @@ const config = {
       },
       {
         loader: ExtractTextPlugin.extract({
-          loader: 'css-loader'
+          loader: 'css-loader',
         }),
-        test: /\.css$/
+        test: /\.css$/,
       },
       {
         test: /\.(jpe?g|gif|png|svg)$/,
@@ -25,12 +25,17 @@ const config = {
           {
             loader: 'url-loader',
             options: {
-              limit: 40000
-            }
+              limit: 40000,
+            },
           },
-          'image-webpack-loader'
-        ]
-      }
+          {
+            loader: 'image-webpack-loader',
+            options: {
+
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [

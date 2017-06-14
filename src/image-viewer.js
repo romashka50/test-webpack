@@ -1,7 +1,12 @@
 import '../styles/image-viewer.css';
+import big from '../assets/big.jpg';
+import small from '../assets/small.jpg';
 
-const image = document.createElement('img');
+const bigImg = document.createElement('img');
+const smallImg = document.createElement('img');
 
-image.src = 'http://lorempixel.com/1024/960';
+bigImg.src = big;
+smallImg.src = small;
 
-document.body.appendChild(image);
+document.body.appendChild(bigImg);
+document.body.appendChild(smallImg);
