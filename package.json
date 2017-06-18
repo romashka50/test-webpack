@@ -6,6 +6,9 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && webpack",
+    "build:production": "NODE_ENV=production npm run clean && webpack -p",
+    "deployment:gitpages": "npm run build:production && git subtree push --prefix dist origin gh-pages",
+    "deployment:surge": "npm run build:production && surge -p dist",
     "serve": "webpack-dev-server --port=3030"
   },
   "repository": "https://github.com/StephenGrider/WebpackProject",
